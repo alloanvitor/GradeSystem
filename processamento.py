@@ -50,3 +50,21 @@ def encontrar_top_student(lista_alunos):
                 top_student = nome
 
     return top_student, maior_media
+
+# Função para mostrar os alunos no terminal
+def processar_alunos(lista_alunos):
+
+    for nome, notas in lista_alunos:
+
+        if validar_notas(notas):
+
+            media = calcular_media(notas)
+            situacao = verificar_situacao(media)
+
+            print(f"Aluno: {nome}")
+            print(f"Média: {media:.2f}")
+            print(f"Situação: {situacao}")
+            print("-------------------------")
+
+        else:
+            print(f"Aluno: {nome} possui dados inválidos")
