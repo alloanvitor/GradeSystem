@@ -1,0 +1,75 @@
+Quem é o usuário (persona):
+Coordenação acadêmica do SENAI.
+
+O que pensa e sente:
+Sente-se sobrecarregada com a quantidade de dados desorganizados.
+Tem preocupação com erros nas análises e insegurança na tomada de decisões.
+Busca mais controle, precisão e agilidade.
+
+O que vê:
+Dados inconsistentes, listas de notas incompletas ou vazias.
+Processos manuais demorados e suscetíveis a falhas.
+Dificuldade em identificar rapidamente alunos em recuperação ou destaque.
+
+O que houve:
+Cobranças por resultados mais rápidos e confiáveis.
+Reclamações sobre demora na análise de desempenho.
+Necessidade de melhorias no processo acadêmico.
+
+O que fala e faz:
+Tenta organizar manualmente os dados.
+Calcula médias e analisa aluno por aluno.
+Busca soluções tecnológicas mais eficientes.
+
+Dores (problemas):
+Falta de padronização nos dados.
+Risco de erros humanos.
+Processo lento e retrabalho constante.
+Dificuldade em identificar rapidamente situações críticas.
+
+Ganhos (necessidades):
+Automatização do processo.
+Confiabilidade nos dados.
+Rapidez na análise.
+Relatórios organizados e fáceis de acessar.
+Código estruturado e fácil de manter.
+
+RF01: O sistema deve receber uma lista de alunos com suas respectivas notas.
+
+RF02: O sistema deve validar se as listas de notas não estão vazias ou inválidas.
+
+RF03: O sistema deve calcular a média das notas de cada aluno.
+
+RF04: O sistema deve identificar alunos em recuperação (média < 7.0).
+
+RF05: O sistema deve identificar o aluno com maior média (Top Student).
+
+RF06: O sistema deve percorrer os dados utilizando estruturas de repetição.
+
+RF07: O sistema deve gerar um relatório final em arquivo .txt.
+
+RF08: O sistema deve exibir os resultados de forma organizada.
+
+RNF01: O sistema deve ser modularizado (main.py e processamento.py).
+
+RNF02: O código deve ser organizado e de fácil manutenção.
+
+RNF03: O sistema deve tratar erros e dados inválidos.
+
+RNF04: O sistema deve ter boa legibilidade.
+
+RNF05: O processamento deve ser eficiente.
+
+RNF06: O relatório deve ser claro e bem formatado.
+
+RN01: Um aluno só pode ser avaliado se possuir notas válidas.
+
+RN02: A média deve ser calculada com base nas notas disponíveis.
+
+RN03: Alunos com média menor que 7.0 estão em recuperação.
+
+RN04: O Top Student é o aluno com a maior média.
+
+RN05: Dados inconsistentes devem ser ignorados ou tratados.
+
+RN06: O relatório deve conter todos os alunos válidos processados.
