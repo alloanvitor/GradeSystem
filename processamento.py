@@ -32,3 +32,21 @@ def verificar_situacao(media):
         return "Recuperação"
     else:
         return "Aprovado"
+    
+# Função para encontrar o Top Student
+def encontrar_top_student(lista_alunos):
+
+    maior_media = 0
+    top_student = ""
+
+    for nome, notas in lista_alunos:
+
+        if validar_notas(notas):
+
+            media = calcular_media(notas)
+
+            if media > maior_media:
+                maior_media = media
+                top_student = nome
+
+    return top_student, maior_media
