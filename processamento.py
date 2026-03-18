@@ -96,3 +96,28 @@ def gerar_relatorio(lista_alunos):
     arquivo.write(f"{top} com média {media_top:.2f}\n")
 
     arquivo.close()
+
+#Coletar dados
+
+def coletar_alunos():
+
+    alunos = []
+
+    quantidade = int(input("Quantos alunos deseja cadastrar? "))
+
+    for i in range(quantidade):
+
+        nome = input("Nome do aluno: ")
+
+        qtd_notas = int(input("Quantas notas esse aluno possui? "))
+
+        notas = []
+
+        for j in range(qtd_notas):
+
+            nota = float(input(f"Digite a nota {j+1}: "))
+            notas.append(nota)
+
+        alunos.append((nome, notas))
+
+    return alunos
