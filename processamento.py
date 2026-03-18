@@ -24,3 +24,11 @@ def calcular_media(notas):
     media = soma / len(notas)
 
     return media
+
+# Função para verificar situação do aluno
+def verificar_situacao(media):
+
+    if media < 7:
+        return "Recuperação"
+    else:
+        return "Aprovado"
